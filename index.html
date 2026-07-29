@@ -10,35 +10,49 @@
 
 <link rel="stylesheet" href="style.css">
 
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
 
 <body>
 
 
-<!-- Navigation -->
+
+<!-- ===========================
+     Navigation
+=========================== -->
 
 <header>
 
 <nav>
 
 <div class="logo">
-El Chalateco
-</div>
 
+<a href="index.html">
+
+<img src="images/logo.png" alt="El Chalateco Logo">
+
+</a>
+
+</div>
 
 <ul>
 
-<li><a href="#home">Home</a></li>
+<li><a href="index.html">Home</a></li>
 
-<li><a href="#menu">Menu</a></li>
+<li><a href="menu.html">Menu</a></li>
 
-<li><a href="#gallery">Gallery</a></li>
+<li><a href="#about">About</a></li>
+
+<li><a href="#reviews">Reviews</a></li>
 
 <li><a href="#contact">Contact</a></li>
 
 </ul>
-
 
 </nav>
 
@@ -46,239 +60,492 @@ El Chalateco
 
 
 
-<!-- Hero Section -->
+<!-- ===========================
+     Hero
+=========================== -->
 
+<section class="hero">
 
-<section class="hero" id="home">
+<div class="overlay">
 
+<div class="hero-content">
 
-<div class="hero-text">
+<h2>Authentic Salvadoran Cuisine</h2>
 
-
-<h1>
-El Chalateco
-</h1>
-
-
-<h2>
-Pupusería & Restaurante
-</h2>
-
+<h1>El Chalateco</h1>
 
 <p>
-Authentic Salvadoran, Central American & Hispanic Cuisine
+
+Fresh handmade pupusas, grilled favorites,
+seafood, breakfast, and authentic family recipes
+served with Salvadoran hospitality.
+
 </p>
 
+<div class="hero-buttons">
 
-<a href="tel:2018694006" class="button">
-Order Online
+<a href="menu.html" class="primary-btn">
+
+View Full Menu
+
 </a>
 
+<a href="tel:2018694006" class="secondary-btn">
+
+Call to Order
+
+</a>
 
 </div>
 
+</div>
+
+</div>
 
 </section>
 
 
 
-<!-- About Section -->
+<!-- ===========================
+     About
+=========================== -->
 
+<section class="about" id="about">
 
-<section class="about">
+<div class="section-title">
 
-
-<h2>
-Welcome
-</h2>
-
+<h2>Welcome to El Chalateco</h2>
 
 <p>
 
-Located in Guttenberg, New Jersey, El Chalateco proudly serves traditional Salvadoran, Central American, and Hispanic cuisine. Enjoy handmade pupusas, grilled meats, fresh seafood, traditional breakfasts, homemade beverages, and family recipes prepared with authentic flavors.
+A taste of El Salvador in the heart of
+Guttenberg, New Jersey.
 
 </p>
 
+</div>
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="images/restaurant/inside.jpg" alt="Restaurant Interior">
+
+</div>
+
+<div class="about-text">
+
+<h3>Authentic Family Recipes</h3>
+
+<p>
+
+For years, El Chalateco has proudly served
+traditional Salvadoran and Central American cuisine
+made from fresh ingredients and time-honored recipes.
+
+</p>
+
+<p>
+
+Whether you're stopping in for breakfast,
+sharing pupusas with family,
+or enjoying one of our seafood specialties,
+our goal is to make every guest feel at home.
+
+</p>
+
+<a href="menu.html" class="learn-more">
+
+Explore Our Menu →
+
+</a>
+
+</div>
+
+</div>
 
 </section>
-<!-- Menu Section -->
+<!-- ===========================
+     Featured Favorites
+=========================== -->
 
+<section class="featured">
 
-<section id="menu">
+<div class="section-title">
 
-
-<h2>
-Featured Favorites
-</h2>
-
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-<img src="images/pupusas.jpg" alt="Pupusas">
-
-<h3>
-Pupusas
-</h3>
+<h2>Featured Favorites</h2>
 
 <p>
-Handmade traditional Salvadoran pupusas prepared fresh.
+A few of our guests' most-loved dishes.
 </p>
 
 </div>
 
+<div class="featured-grid">
 
+<div class="food-card">
 
+<img src="images/featured/pupusas.jpg" alt="Pupusas">
 
-<div class="card">
+<div class="food-info">
 
-<img src="images/carne-asada.jpg" alt="Carne Asada">
-
-<h3>
-Carne Asada
-</h3>
-
-<p>
-Grilled beef served with traditional sides.
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<img src="images/camarones.jpg" alt="Camarones">
-
-<h3>
-Camarones
-</h3>
+<h3>Handmade Pupusas</h3>
 
 <p>
-Fresh shrimp prepared with authentic flavors.
+Freshly made corn tortillas filled with your favorite ingredients and served with curtido and salsa.
 </p>
 
+<a href="menu.html">
+View Menu →
+</a>
+
+</div>
+
 </div>
 
 
 
+<div class="food-card">
+
+<img src="images/featured/carne-asada.jpg" alt="Carne Asada">
+
+<div class="food-info">
+
+<h3>Carne Asada</h3>
+
+<p>
+Tender grilled steak served with traditional Salvadoran sides and fresh tortillas.
+</p>
+
+<a href="menu.html">
+View Menu →
+</a>
+
 </div>
 
+</div>
+
+
+
+<div class="food-card">
+
+<img src="images/featured/camarones.jpg" alt="Camarones al Ajillo">
+
+<div class="food-info">
+
+<h3>Camarones al Ajillo</h3>
+
+<p>
+Juicy shrimp sautéed in a rich garlic sauce and served with rice and fresh salad.
+</p>
+
+<a href="menu.html">
+View Menu →
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 
+<!-- ===========================
+     Why Choose Us
+=========================== -->
 
-<!-- Gallery Section -->
+<section class="why-us">
 
+<div class="section-title">
 
-<section id="gallery">
+<h2>Why Guests Love El Chalateco</h2>
 
+<p>
+Fresh ingredients, authentic recipes, and warm Salvadoran hospitality.
+</p>
 
-<h2>
-Gallery
-</h2>
+</div>
 
+<div class="features-grid">
 
+<div class="feature-box">
 
-<div class="gallery">
+<h3>🌽 Authentic Recipes</h3>
 
-
-
-<img src="images/gallery1.jpg" alt="Restaurant food">
-
-<img src="images/gallery2.jpg" alt="Salvadoran dishes">
-
-<img src="images/gallery3.jpg" alt="El Chalateco food">
-
-
+<p>
+Traditional family recipes prepared with authentic Salvadoran flavors.
+</p>
 
 </div>
 
 
+
+<div class="feature-box">
+
+<h3>🥘 Fresh Every Day</h3>
+
+<p>
+Every meal is prepared with quality ingredients for freshness and flavor.
+</p>
+
+</div>
+
+
+
+<div class="feature-box">
+
+<h3>👨‍👩‍👧‍👦 Family Friendly</h3>
+
+<p>
+A welcoming place where friends and families can enjoy great food together.
+</p>
+
+</div>
+
+
+
+<div class="feature-box">
+
+<h3>❤️ Made With Care</h3>
+
+<p>
+Every dish is prepared with pride and served with exceptional hospitality.
+</p>
+
+</div>
+
+</div>
+
 </section>
-<!-- Contact Section -->
 
 
-<section id="contact">
 
+<!-- ===========================
+     Reviews
+=========================== -->
 
-<h2>
-Visit Us
-</h2>
+<section class="reviews" id="reviews">
 
+<div class="section-title">
 
+<h2>What Our Guests Say</h2>
+
+<p>
+Real experiences from customers who enjoy dining with us.
+</p>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
 
 <p>
 
-📍 6711 Bergenline Ave.<br>
+"One of the best Salvadoran restaurants in the area. The pupusas are always fresh and delicious."
+
+</p>
+
+<h4>
+— Happy Customer
+</h4>
+
+</div>
+
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+"Excellent service, generous portions, and authentic flavors. We always leave satisfied."
+
+</p>
+
+<h4>
+— Local Guest
+</h4>
+
+</div>
+
+
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+"Our favorite place for breakfast and seafood. Everything tastes homemade."
+
+</p>
+
+<h4>
+— Returning Customer
+</h4>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ===========================
+     Contact
+=========================== -->
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<h2>Visit El Chalateco</h2>
+
+<p>
+We look forward to serving you.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-box">
+
+<h3>📍 Address</h3>
+
+<p>
+
+6711 Bergenline Ave.<br>
 
 Guttenberg, NJ 07093
 
 </p>
 
+</div>
 
+
+
+<div class="contact-box">
+
+<h3>📞 Phone</h3>
 
 <p>
 
-📞 (201) 869-4006
+<a href="tel:2018694006">
+
+(201) 869-4006
+
+</a>
 
 </p>
 
+</div>
 
+
+
+<div class="contact-box">
+
+<h3>🕒 Hours</h3>
 
 <p>
 
-Monday, Wednesday, Thursday & Friday
-
-<br>
+Monday, Wednesday, Thursday & Friday<br>
 
 9:00 AM – 9:00 PM
 
 </p>
 
-
-
 <p>
 
-Saturday & Sunday
-
-<br>
+Saturday & Sunday<br>
 
 8:00 AM – 9:00 PM
 
 </p>
 
+<p>
 
+Tuesday — Closed
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-buttons">
+
+<a href="menu.html" class="primary-btn">
+
+View Full Menu
+
+</a>
+
+<a href="tel:2018694006" class="secondary-btn">
+
+Call Now
+
+</a>
+
+</div>
 
 </section>
 
 
 
-
-
-<!-- Footer -->
-
+<!-- ===========================
+     Footer
+=========================== -->
 
 <footer>
 
+<div class="footer-content">
+
+<h2>
+El Chalateco
+</h2>
+
+<p>
+Authentic Salvadoran • Central American • Hispanic Cuisine
+</p>
 
 <p>
 
-© 2026 El Chalateco | All Rights Reserved
+6711 Bergenline Ave. • Guttenberg, NJ 07093
 
 </p>
 
+<p>
+
+(201) 869-4006
+
+</p>
+
+<p class="copyright">
+
+© 2026 El Chalateco. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
-
 
 
 
