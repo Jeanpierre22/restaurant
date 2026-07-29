@@ -1,66 +1,140 @@
 *{
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
+
+
+html{
+    scroll-behavior:smooth;
+}
+
 
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-    color:#222;
+
     background:#faf7f2;
 
+    color:#222;
+
+    line-height:1.6;
+
 }
+
+
+
+
+/* Navigation */
+
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+
 
 nav{
 
     background:#0047A0;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     padding:20px 8%;
 
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
 }
+
+
 
 .logo{
 
     color:white;
+
     font-size:32px;
+
     font-weight:bold;
 
 }
 
+
+
 nav ul{
 
-    list-style:none;
     display:flex;
-    gap:30px;
+
+    gap:35px;
+
+    list-style:none;
 
 }
+
+
 
 nav a{
 
     color:white;
+
     text-decoration:none;
+
     font-weight:bold;
 
+    font-size:17px;
+
+    transition:.3s;
+
 }
+
+
+
+nav a:hover{
+
+    color:#FFD54F;
+
+}
+
+
+
+
+
+/* Hero */
+
 
 .hero{
 
     height:85vh;
 
+
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+
     url("images/hero.jpg");
 
+
     background-size:cover;
+
     background-position:center;
 
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
@@ -69,75 +143,154 @@ nav a{
 
 }
 
-.hero h1{
 
-    font-size:80px;
+
+.hero-text{
+
+    max-width:900px;
+
+    padding:20px;
 
 }
+
+
+
+.hero h1{
+
+    font-size:90px;
+
+    margin-bottom:10px;
+
+}
+
+
 
 .hero h2{
 
-    margin-top:10px;
-    color:#D4AF37;
+    color:#FFD54F;
+
+    font-size:35px;
+
+    margin-bottom:20px;
 
 }
+
+
 
 .hero p{
 
-    margin:30px 0;
-    font-size:22px;
+    font-size:24px;
+
+    margin-bottom:35px;
 
 }
+
+
 
 .button{
 
+
     display:inline-block;
 
-    background:#D4AF37;
+
+    background:#FFD54F;
+
+
     color:#222;
 
-    padding:16px 35px;
 
-    border-radius:40px;
+    padding:18px 45px;
+
+
+    border-radius:50px;
+
 
     text-decoration:none;
 
+
     font-weight:bold;
+
+
+    font-size:18px;
+
+
+    transition:.3s;
 
 }
 
-.about,
-.featured,
-.contact{
+
+
+.button:hover{
+
+    background:white;
+
+    transform:translateY(-5px);
+
+}
+
+/* Sections */
+
+
+section{
 
     width:90%;
+
     max-width:1200px;
 
-    margin:80px auto;
+    margin:90px auto;
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    color:#0047A0;
+
+    font-size:48px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+section p{
+
+    font-size:19px;
+
+}
+
+
+
+
+/* About */
+
+
+.about{
 
     text-align:center;
 
 }
 
-.about h2,
-.featured h2,
-.contact h2{
 
-    font-size:42px;
-
-    color:#0047A0;
-
-    margin-bottom:25px;
-
-}
 
 .about p{
 
-    line-height:1.8;
+    max-width:900px;
 
-    font-size:18px;
+    margin:auto;
 
 }
+
+
+
+
+
+/* Menu Cards */
+
 
 .cards{
 
@@ -147,9 +300,9 @@ nav a{
 
     gap:30px;
 
-    margin-top:40px;
-
 }
+
+
 
 .card{
 
@@ -159,33 +312,125 @@ nav a{
 
     overflow:hidden;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+    text-align:center;
 
 }
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
 
 .card img{
 
     width:100%;
 
-    height:250px;
+    height:230px;
 
     object-fit:cover;
 
 }
 
+
+
 .card h3{
 
-    padding:20px;
+    color:#0047A0;
+
+    font-size:30px;
+
+    margin:20px 0 10px;
 
 }
 
-.contact p{
 
-    margin:12px 0;
 
-    font-size:18px;
+.card p{
+
+    padding:0 25px 30px;
 
 }
+
+
+
+
+/* Gallery */
+
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.gallery img{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+
+
+.gallery img:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+
+
+
+/* Contact */
+
+
+#contact{
+
+    text-align:center;
+
+}
+
+
+
+#contact p{
+
+    margin:18px 0;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* Footer */
+
 
 footer{
 
@@ -195,11 +440,17 @@ footer{
 
     text-align:center;
 
-    padding:25px;
+    padding:30px;
+
+    font-size:17px;
 
 }
 
-@media(max-width:768px){
+/* Mobile Design */
+
+
+@media(max-width:900px){
+
 
 nav{
 
@@ -209,24 +460,165 @@ nav{
 
 }
 
+
+
 nav ul{
 
     flex-wrap:wrap;
 
     justify-content:center;
 
+    gap:20px;
+
 }
+
+
+
+.logo{
+
+    font-size:28px;
+
+}
+
+
+
+.hero{
+
+    height:75vh;
+
+}
+
+
 
 .hero h1{
 
-    font-size:50px;
+    font-size:55px;
 
 }
+
+
+
+.hero h2{
+
+    font-size:26px;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+
+.button{
+
+    padding:15px 35px;
+
+}
+
+
+
+section{
+
+    margin:60px auto;
+
+}
+
+
+
+section h2{
+
+    font-size:38px;
+
+}
+
+
+
+section p{
+
+    font-size:17px;
+
+}
+
+
 
 .cards{
 
     grid-template-columns:1fr;
 
 }
+
+
+
+.gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.card img{
+
+    height:250px;
+
+}
+
+
+
+.gallery img{
+
+    height:280px;
+
+}
+
+
+
+}
+
+
+
+
+
+/* Extra Small Phones */
+
+
+@media(max-width:500px){
+
+
+.hero h1{
+
+    font-size:42px;
+
+}
+
+
+
+.hero h2{
+
+    font-size:22px;
+
+}
+
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+
+nav a{
+
+    font-size:15px;
+
+}
+
 
 }
