@@ -249,14 +249,10 @@ align-items:center;
    General Sections
 =========================== */
 
-section{
-
+section:not(.hero){
     width:90%;
-
     max-width:1250px;
-
     margin:100px auto;
-
 }
 
 .section-title{
