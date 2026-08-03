@@ -115,7 +115,7 @@ nav ul li a:hover{
    Hero
 =========================== */
 .hero{
-background-image:url("Logo.png");
+background-image:url("image/Logo.png");
 height:100vh;
 background-size:cover;
 background-position:center;
